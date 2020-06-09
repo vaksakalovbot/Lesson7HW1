@@ -6,10 +6,9 @@
 //  Copyright © 2020 Vladimir. All rights reserved.
 //
 
-import Foundation
-
 class DataManager {
     
+    // Уместен ли здесь будет синглтон?
     static let shared = DataManager()
     
     var persons: [Person] = []
@@ -43,16 +42,18 @@ class DataManager {
                 Person(
                     firstName: firstName,
                     lastName: lastName,
-                    phone: "+\(Int.random(in: 1...9))-\(Int.random(in: 100..<1000))-\(Int.random(in: 100..<1000))-\(Int.random(in: 10..<100))-\(Int.random(in: 10..<100))",
-                    email: "\(lastName.lowercased())_\(firstName.lowercased())@gmail.com"
+                    phone: nil,                 //"+\(Int.random(in: 1...9))-\(Int.random(in: 100..<1000))-\(Int.random(in: 100..<1000))-\(Int.random(in: 10..<100))-\(Int.random(in: 10..<100))",
+                    email: nil                  //"\(lastName.lowercased())_\(firstName.lowercased())@gmail.com"
                 )
             )
         }
         
-//        for person in persons {
-//            person.phone = "+\(Int.random(in: 1...9))-\(Int.random(in: 100..<1000))-\(Int.random(in: 100..<1000))-\(Int.random(in: 100..<1000))-\(Int.random(in: 10..<100))"
-//            person.email = "\(person.lastName)@gmail.com"
-//        }
+        // Сделал так, чтобы узнать твое мнение: корректно ли так работать с массивами и структурами?
+        for index in 0..<persons.count {
+            persons[index].phone = "+\(Int.random(in: 1...9))-\(Int.random(in: 100..<1000))-\(Int.random(in: 100..<1000))-\(Int.random(in: 10..<100))-\(Int.random(in: 10..<100))"
+            persons[index].email = "\(persons[index].lastName.lowercased())_\(persons[index].firstName.lowercased())@gmail.com"
+        }
+
         return persons
     }
     
