@@ -15,10 +15,13 @@ class DataManager {
     var persons: [Person] = []
     
     private init() {
-        self.persons = self.getPersons()
+        self.persons = self.getRandomPersons()
     }
     
-    private func getPersons() -> [Person] {
+    private func getRandomPersons() -> [Person] {
+
+        // Решил воспользоваться свойством множества для случайной выборки имен и фамилий
+        // Через массивы тоже можно, но так интересней -> тем более результат один
         let firstNames: Set = [
             "Bruce", "John", "Stiven",
             "Aaron", "Tim", "Alan",
@@ -36,10 +39,14 @@ class DataManager {
         var persons = [Person]()
         
         for (firstName, lastName) in zip(firstNames, lastNames) {
-            persons.append(Person(firstName: firstName,
-                                  lastName: lastName,
-                                  phone: "+\(Int.random(in: 1...9))-\(Int.random(in: 100..<1000))-\(Int.random(in: 100..<1000))-\(Int.random(in: 10..<100))-\(Int.random(in: 10..<100))",
-                email: "\(lastName.lowercased())_\(firstName.lowercased())@gmail.com"))
+            persons.append(
+                Person(
+                    firstName: firstName,
+                    lastName: lastName,
+                    phone: "+\(Int.random(in: 1...9))-\(Int.random(in: 100..<1000))-\(Int.random(in: 100..<1000))-\(Int.random(in: 10..<100))-\(Int.random(in: 10..<100))",
+                    email: "\(lastName.lowercased())_\(firstName.lowercased())@gmail.com"
+                )
+            )
         }
         
 //        for person in persons {
