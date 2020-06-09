@@ -16,14 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="firstTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstTableViewCell" textLabel="vwd-X0-gml" style="IBUITableViewCellStyleDefault" id="sfC-SI-52a">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="firstTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstTableViewCell" textLabel="JRW-iW-Ujo" style="IBUITableViewCellStyleDefault" id="sfC-SI-52a">
                                 <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sfC-SI-52a" id="jrv-kH-g1D">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vwd-X0-gml">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JRW-iW-Ujo">
                                             <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -57,14 +57,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hD-Nq-guY">
-                                <rect key="frame" x="16" y="91" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hD-Nq-guY">
+                                <rect key="frame" x="16" y="99" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7Y-Aq-RrV">
-                                <rect key="frame" x="16" y="120" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7Y-Aq-RrV">
+                                <rect key="frame" x="16" y="127.5" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,10 +74,10 @@
                         <constraints>
                             <constraint firstItem="o7Y-Aq-RrV" firstAttribute="top" secondItem="8hD-Nq-guY" secondAttribute="bottom" constant="8" id="6ML-7J-vMg"/>
                             <constraint firstItem="o7Y-Aq-RrV" firstAttribute="leading" secondItem="u9U-lP-kzQ" secondAttribute="leading" constant="16" id="95n-Ur-Zb3"/>
+                            <constraint firstItem="8hD-Nq-guY" firstAttribute="top" secondItem="u9U-lP-kzQ" secondAttribute="top" constant="8" id="h3L-ca-Fkd"/>
                             <constraint firstItem="8hD-Nq-guY" firstAttribute="leading" secondItem="u9U-lP-kzQ" secondAttribute="leading" constant="16" id="h6T-28-pcU"/>
                             <constraint firstItem="u9U-lP-kzQ" firstAttribute="trailing" secondItem="o7Y-Aq-RrV" secondAttribute="trailing" constant="16" id="wpF-gj-5ot"/>
                             <constraint firstItem="u9U-lP-kzQ" firstAttribute="trailing" secondItem="8hD-Nq-guY" secondAttribute="trailing" constant="16" id="x9z-Ri-W6Q"/>
-                            <constraint firstItem="8hD-Nq-guY" firstAttribute="top" secondItem="u9U-lP-kzQ" secondAttribute="top" id="xnJ-1R-cpD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u9U-lP-kzQ"/>
                     </view>

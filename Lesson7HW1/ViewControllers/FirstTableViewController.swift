@@ -10,13 +10,8 @@ import UIKit
 
 class FirstTableViewController: UITableViewController {
 
-    var persons = DataManager().getPersons()
+    let persons = DataManager.shared.persons
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print(persons)
-    }
-
     // MARK: - Table view data source
 
     // Знаю, что три следующие строки надо бы удадить, но оставляю на будущее, чтобы не забыть, что такой метод можно использовать
